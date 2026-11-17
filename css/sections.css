@@ -82,7 +82,8 @@
   text-transform: uppercase;
 }
 #karya {
-  padding: 140px 0 100px;
+  padding-top: 140px;
+  padding-bottom: 100px;
 }
 #karya h2 {
   font-weight: 600;
