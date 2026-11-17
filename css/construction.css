@@ -1,0 +1,115 @@
+/* Ilustrasi kontraktor (SVG beranimasi) */
+.cons {
+  width: 100%;
+  max-width: 480px;
+}
+.cons svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  color: var(--fg);
+  overflow: visible;
+}
+.cons p {
+  margin: 14px 0 0;
+}
+.bm {
+  animation: bm 4s ease-in-out infinite;
+}
+.sk {
+  animation: sk 4s ease-in-out infinite;
+}
+.bu {
+  animation: bu 4s ease-in-out infinite;
+}
+@keyframes bm {
+  50% {
+    transform: rotate(-4deg);
+  }
+}
+@keyframes sk {
+  0%,
+  100% {
+    transform: rotate(-8deg);
+  }
+  50% {
+    transform: rotate(14deg);
+  }
+}
+@keyframes bu {
+  0%,
+  100% {
+    transform: rotate(8deg);
+  }
+  50% {
+    transform: rotate(-28deg);
+  }
+}
+.tr {
+  animation: tr 8s ease-in-out infinite alternate;
+}
+@keyframes tr {
+  to {
+    transform: translateX(-34px);
+  }
+}
+.cb {
+  animation: cb 5s ease-in-out infinite;
+}
+@keyframes cb {
+  50% {
+    transform: scaleY(0.45);
+  }
+}
+.ld {
+  animation: ld 5s ease-in-out infinite;
+}
+@keyframes ld {
+  50% {
+    transform: translateY(-38.5px);
+  }
+}
+.lv {
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+  animation: lvl 9s ease-in-out infinite both;
+}
+@keyframes lvl {
+  0% {
+    opacity: 0;
+    transform: scaleY(0.4);
+  }
+  12%,
+  86% {
+    opacity: 1;
+    transform: none;
+  }
+  100% {
+    opacity: 0;
+    transform: scaleY(0.4);
+  }
+}
+.pile {
+  animation: pile 4s ease-in-out infinite;
+}
+@keyframes pile {
+  50% {
+    transform: scaleY(1.12);
+  }
+}
+.wk {
+  animation: wk 1.2s ease-in-out infinite alternate;
+}
+@keyframes wk {
+  to {
+    transform: translateY(-1.5px);
+  }
+}
+.sun {
+  animation: sun 6s ease-in-out infinite;
+}
+@keyframes sun {
+  50% {
+    opacity: 1;
+  }
+}

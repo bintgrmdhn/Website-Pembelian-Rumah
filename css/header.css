@@ -1,0 +1,54 @@
+/* Header, logo, tombol pill */
+.bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: calc(22px + env(safe-area-inset-top, 0px)) clamp(18px, 5vw, 96px) 12px;
+}
+.logo {
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: -0.04em;
+}
+.logo b {
+  color: var(--blue);
+}
+.tag {
+  position: absolute;
+  left: clamp(150px, 22vw, 414px);
+  top: calc(34px + env(safe-area-inset-top, 0px));
+  font-size: clamp(15px, 2vw, 30px);
+  line-height: 1.35;
+  font-weight: 500;
+}
+.r {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.pill {
+  border: 0;
+  background: var(--pill);
+  color: var(--fg);
+  border-radius: 99px;
+  height: 42px;
+  padding: 0 20px;
+  font: inherit;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  cursor: pointer;
+}
+.circ {
+  width: 42px;
+  padding: 0;
+  justify-content: center;
+}

@@ -1,0 +1,72 @@
+/* Dasar: variabel tema, reset, tipografi, latar halaman */
+:root {
+  color-scheme: light;
+  --bg: #eff0f6;
+  --fg: #12131c;
+  --mute: #6c6f84;
+  --pill: #e2e3ee;
+  --line: #12131c26;
+  --blue: #2b36ff;
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+:root[data-theme='dark'] {
+  --bg: #14151f;
+  --fg: #eff0f6;
+  --mute: #9a9db3;
+  --pill: #262838;
+  --line: #eff0f633;
+  color-scheme: dark;
+}
+html {
+  scroll-padding-top: env(safe-area-inset-top, 0px);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    sans-serif;
+  overflow-x: hidden;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 3px;
+}
+:root {
+  --g1: #dfe7f4;
+  --g2: #f3f1ec;
+  --g3: #e5ded1;
+  --gl: #ffffffb8;
+}
+:root[data-theme='dark'] {
+  --g1: #0d1120;
+  --g2: #161a2e;
+  --g3: #1e2136;
+  --gl: #5062c533;
+}
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(60% 55% at 38% 56%, var(--gl), transparent 72%),
+    linear-gradient(180deg, var(--g1) 0%, var(--g2) 55%, var(--g3) 100%);
+}

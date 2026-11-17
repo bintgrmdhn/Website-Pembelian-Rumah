@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Studio — Desainer Interaksi &amp; UI/UX</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/hero.css">
+<link rel="stylesheet" href="css/sections.css">
+<link rel="stylesheet" href="css/menu.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/spec.css">
+<link rel="stylesheet" href="css/lahan.css">
+<link rel="stylesheet" href="css/construction.css">
+<script src="https://cdn.jsdelivr.net/npm/three@0.147.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.147.0/examples/js/loaders/GLTFLoader.js"></script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🏠%3C/text%3E%3C/svg%3E">
+</head><body>
+<div class="bar"><a class="logo" href="#">Studio<b>.</b>Ruang</a>
+<div class="r"><button class="pill circ" id="th" aria-label="Ganti tema">◐</button><a class="hide" href="#kontak">Hubungi ↗</a><button class="pill" id="mb">Menu ☰</button></div></div>
+<nav id="menu" aria-label="Menu"><header><span>Studio / Indeks</span><button class="pill" id="mc">Tutup ✕</button></header>
+<a href="#hero"><span>01</span>Beranda<b>↗</b></a><a href="#spesifikasi" data-spec="1"><span>02</span>Spesifikasi<b>↗</b></a><a href="#lahan"><span>03</span>Pemetaan lahan<b>↗</b></a><a href="#tentang"><span>04</span>Tentang kami<b>↗</b></a><a href="#karya"><span>05</span>Karya<b>↗</b></a><a href="#kontak"><span>06</span>Kontak<b>↗</b></a><p class="mf">Kontraktor &amp; pembangunan<b>halo@contoh.com ↗</b></p></nav>
+<main>
+<section id="hero"><div class="stage"><div class="cam"><div id="scene"></div></div>
+<canvas id="gl" aria-label="Model 3D rumah modern"></canvas><div id="ld">Memuat rumah…</div>
+<div class="spec" id="spec"><div class="sg"><div class="sx">
+<small class="a" style="--i:0">(Spesifikasi bangunan)</small>
+<h2 class="a" style="--i:1">Rumah modern,<br>dirancang detail.</h2>
+<div class="st"><div class="a" style="--i:2"><b>±<em data-n="11.2" data-d="1">0</em> m</b><span>Lebar</span></div><div class="a" style="--i:3"><b>±<em data-n="13.2" data-d="1">0</em> m</b><span>Panjang</span></div><div class="a" style="--i:4"><b>±<em data-n="9.6" data-d="1">0</em> m</b><span>Tinggi</span></div><div class="a" style="--i:5"><b>±<em data-n="148" data-d="0">0</em> m²</b><span>Luas dasar</span></div></div>
+<dl><div class="a" style="--i:6"><dt>Gaya</dt><dd>Modern tropis</dd></div><div class="a" style="--i:7"><dt>Struktur</dt><dd>Beton bertulang dan rangka baja</dd></div><div class="a" style="--i:8"><dt>Fasad</dt><dd>Panel kayu, keramik mozaik hijau, kaca</dd></div><div class="a" style="--i:9"><dt>Atap</dt><dd>Dak beton datar dengan teritisan</dd></div></dl></div>
+<div class="vis"><svg viewBox="0 0 400 300" role="img" aria-label="Sketsa tampak depan rumah dengan dimensi">
+<rect class="bk" style="--i:0" x="60" y="190" width="270" height="60" fill="#2c2e36"/>
+<rect class="bk" style="--i:.6" x="80" y="205" width="110" height="45" fill="#171920"/>
+<rect class="bk" style="--i:.8" x="230" y="200" width="80" height="50" fill="#80786b"/>
+<rect class="bk" style="--i:1.4" x="55" y="182" width="280" height="8" fill="#20222a"/>
+<rect class="bk gl" style="--i:2" x="70" y="120" width="250" height="62" fill="#f1deb0"/>
+<rect class="bk" style="--i:2.4" x="95" y="132" width="120" height="38" fill="#9fc4cf"/>
+<rect class="bk" style="--i:2.8" x="236" y="128" width="64" height="46" fill="#3fa88c"/>
+<rect class="bk" style="--i:3.4" x="55" y="112" width="280" height="8" fill="#20222a"/>
+<rect class="bk gl" style="--i:4" x="80" y="50" width="230" height="62" fill="#f1deb0"/><rect class="bk" style="--i:5.0" x="95" y="56" width="8" height="52" fill="#a2703c"/><rect class="bk" style="--i:5.2" x="119" y="56" width="8" height="52" fill="#a2703c"/><rect class="bk" style="--i:5.5" x="143" y="56" width="8" height="52" fill="#a2703c"/><rect class="bk" style="--i:5.8" x="167" y="56" width="8" height="52" fill="#a2703c"/><rect class="bk" style="--i:6.0" x="191" y="56" width="8" height="52" fill="#a2703c"/><rect class="bk" style="--i:6.2" x="215" y="56" width="8" height="52" fill="#a2703c"/><rect class="bk" style="--i:6.5" x="239" y="56" width="8" height="52" fill="#a2703c"/><rect class="bk" style="--i:6.8" x="263" y="56" width="8" height="52" fill="#a2703c"/><rect class="bk" style="--i:7.0" x="287" y="56" width="8" height="52" fill="#a2703c"/>
+<rect class="bk" style="--i:7.6" x="65" y="42" width="260" height="9" fill="#20222a"/>
+<path class="dm" pathLength="1" d="M60 270H330M60 264V276M330 264V276"/>
+<path class="dm" pathLength="1" d="M358 42V250M352 42H364M352 250H364"/>
+<text x="195" y="292" text-anchor="middle">11,2 m</text><text x="372" y="150" transform="rotate(90 372 150)" text-anchor="middle">9,6 m</text>
+</svg>
+<div class="sw"><div class="a" style="--i:8"><i style="background:repeating-linear-gradient(0deg,#8a5a2f 0 7px,#6e4623 7px 9px)"></i><span>Panel kayu</span></div><div class="a" style="--i:9"><i style="background:linear-gradient(90deg,#fff7 1px,transparent 1px) 0 0/9px 9px,linear-gradient(#fff7 1px,transparent 1px) 0 0/9px 9px,#3fa88c"></i><span>Mozaik hijau</span></div><div class="a" style="--i:10"><i style="background:linear-gradient(135deg,#d9f0f6,#7fb6c7 55%,#cfeaf2)"></i><span>Kaca</span></div><div class="a" style="--i:11"><i style="background:radial-gradient(#0002 1px,transparent 1.5px) 0 0/6px 6px,#8d8f96"></i><span>Beton</span></div></div>
+</div></div></div>
+<div class="big" id="big">SEBUAH<br>RUANG<br>UNTUK<br>IDE.</div>
+</div></section>
+<section id="lahan"><div class="lh-g"><div class="lh-info"><small>(Pemetaan lahan)</small><h2>Lahan terbaca,<br>rencana terarah.</h2><p>Konsep pemetaan tapak dalam 3D: batas lahan, garis sempadan, penempatan massa bangunan, dan ruang hijau. Putar untuk melihatnya dari sudut lain.</p>
+<dl><div><dt>Luas lahan</dt><dd>±540 m²</dd></div><div><dt>Ukuran</dt><dd>18 × 30 m</dd></div><div><dt>Luas bangunan</dt><dd>±148 m²</dd></div><div><dt>Ruang hijau</dt><dd>±67%</dd></div><div><dt>Sempadan depan</dt><dd>4 m</dd></div><div><dt>Sempadan samping</dt><dd>3,4 m</dd></div></dl>
+<div class="lh-chs"><button class="lh-ch on" data-g="plot">Batas lahan</button><button class="lh-ch on" data-g="set">Sempadan</button><button class="lh-ch on" data-g="bld">Bangunan</button><button class="lh-ch on" data-g="grn">Ruang hijau</button><button class="lh-act" id="lhr">Putar rumah</button></div></div>
+<div class="lh-cv" id="lhw"><canvas id="lhc" aria-label="Peta lahan 3D"></canvas><div id="lhl"></div>
+<div class="lh-n"><svg viewBox="0 0 44 44"><circle cx="22" cy="22" r="20" fill="none" stroke="currentColor" opacity=".3"/><g id="lhna" style="transform-origin:22px 22px"><path d="M22 10l6 12H16z" fill="var(--blue)"/><path d="M22 34l-6-12h12z" fill="currentColor" opacity=".25"/><text x="22" y="8.5" text-anchor="middle" font-size="7" font-weight="700" fill="currentColor">U</text></g></svg></div>
+<div class="lh-vw"><button class="lh-v on" data-v="3d">Tampilan 3D</button><button class="lh-v" data-v="top">Tampak atas</button></div></div></div></section>
+<section id="tentang" class="wrap"><h2>Membangun dengan rapi. Menyerahkan dengan pasti.</h2>
+<div class="two"><div class="cons"><svg viewBox="0 0 440 260" role="img" aria-label="Ilustrasi kontraktor: ekskavator menggali dan crane mengangkat material di proyek bangunan">
+<defs><pattern id="hch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="8" stroke="currentColor" stroke-width="1" opacity=".3"/></pattern></defs>
+<circle class="sun" cx="182" cy="52" r="14" fill="#ffd36b" opacity=".6"/>
+<path d="M0 226H440" stroke="currentColor" stroke-width="2"/><rect x="0" y="227" width="440" height="14" fill="url(#hch)"/>
+<path class="pile" style="transform-origin:222px 226px" d="M190 226Q220 188 250 226Z" fill="#8a6a45"/>
+<path d="M16 96V226" stroke="currentColor" stroke-width="2"/><rect x="16" y="100" width="94" height="24" rx="3" fill="#e0b000" stroke="currentColor" stroke-width="1.5"/><text x="63" y="116" text-anchor="middle" font-size="9.5" font-weight="700" fill="#12131c" font-family="Inter,system-ui,sans-serif">KONTRAKTOR</text>
+<rect x="28" y="206" width="108" height="20" rx="10" fill="currentColor"/>
+<circle cx="44" cy="216" r="4" fill="var(--bg)"/><circle cx="68" cy="216" r="4" fill="var(--bg)"/><circle cx="96" cy="216" r="4" fill="var(--bg)"/><circle cx="120" cy="216" r="4" fill="var(--bg)"/>
+<rect x="30" y="180" width="20" height="26" rx="3" fill="#c79a00"/><rect x="44" y="176" width="80" height="30" rx="4" fill="#e0b000"/>
+<path d="M84 176V150H114L122 176Z" fill="#e0b000"/><path d="M90 172V154H110L115 172Z" fill="#9fc4cf"/>
+<g class="bm" style="transform-origin:118px 172px"><path d="M118 172L176 112" stroke="#c79a00" stroke-width="9" stroke-linecap="round"/>
+<g class="sk" style="transform-origin:176px 112px"><path d="M176 112L214 168" stroke="#e0b000" stroke-width="7" stroke-linecap="round"/>
+<g class="bu" style="transform-origin:214px 168px"><path d="M212 166L204 182L226 186L230 170Z" fill="currentColor"/></g></g><circle cx="176" cy="112" r="4" fill="currentColor"/></g>
+<circle cx="118" cy="172" r="5" fill="currentColor"/>
+<g class="wk"><circle cx="250" cy="206" r="4" fill="#f2c9a0"/><path d="M245 205a5 5 0 0 1 10 0z" fill="#e0b000"/><rect x="247" y="210" width="6" height="12" rx="1" fill="var(--blue)"/><path d="M248 222v4M252 222v4" stroke="currentColor" stroke-width="1.5"/></g>
+<g class="lv" style="animation-delay:0s"><rect x="262" y="186" width="72" height="4" fill="currentColor"/><rect x="264" y="190" width="4" height="36" fill="currentColor"/><rect x="291" y="190" width="4" height="36" fill="currentColor"/><rect x="328" y="190" width="4" height="36" fill="currentColor"/><rect x="271" y="198" width="17" height="22" fill="var(--blue)" opacity=".2"/><rect x="298" y="198" width="26" height="22" fill="var(--blue)" opacity=".2"/></g><g class="lv" style="animation-delay:1.1s"><rect x="262" y="146" width="72" height="4" fill="currentColor"/><rect x="264" y="150" width="4" height="36" fill="currentColor"/><rect x="291" y="150" width="4" height="36" fill="currentColor"/><rect x="328" y="150" width="4" height="36" fill="currentColor"/><rect x="271" y="158" width="17" height="22" fill="var(--blue)" opacity=".2"/><rect x="298" y="158" width="26" height="22" fill="var(--blue)" opacity=".2"/></g><g class="lv" style="animation-delay:2.2s"><rect x="262" y="106" width="72" height="4" fill="currentColor"/><rect x="264" y="110" width="4" height="36" fill="currentColor"/><rect x="291" y="110" width="4" height="36" fill="currentColor"/><rect x="328" y="110" width="4" height="36" fill="currentColor"/><rect x="271" y="118" width="17" height="22" fill="var(--blue)" opacity=".2"/><rect x="298" y="118" width="26" height="22" fill="var(--blue)" opacity=".2"/></g>
+<rect x="340" y="222" width="32" height="6" fill="currentColor"/><rect x="352" y="48" width="9" height="176" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<path d="M352 224L361 206L352 188L361 170L352 152L361 134L352 116L361 98L352 80L361 62L352 48" fill="none" stroke="currentColor" stroke-width="1"/>
+<path d="M236 46H414" stroke="currentColor" stroke-width="3"/><path d="M352 48L356.5 26L361 48" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<path d="M356.5 26L240 46M356.5 26L412 46" stroke="currentColor" stroke-width="1" opacity=".6"/><rect x="392" y="47" width="22" height="12" fill="#e0b000"/><rect x="344" y="50" width="12" height="9" fill="#e0b000"/>
+<g class="tr"><rect x="290" y="47" width="12" height="6" fill="#e0b000"/>
+<line class="cb" style="transform-origin:296px 53px" x1="296" y1="53" x2="296" y2="121" stroke="currentColor" stroke-width="1.5"/>
+<g class="ld"><circle cx="296" cy="122" r="3" fill="currentColor"/><path d="M296 122L284 131M296 122L308 131" stroke="currentColor" stroke-width="1.2"/><rect x="282" y="131" width="28" height="6" fill="#e0b000" stroke="currentColor" stroke-width="1"/></g></g>
+</svg><p>Dari lahan kosong sampai serah terima kunci, dikerjakan rapi dan tepat waktu.</p></div><div><h3>Dari gambar kerja sampai serah terima kunci, kami mengerjakan rumah impian Anda dengan teliti.</h3><p>Kami kontraktor yang menangani pembangunan dan renovasi, mulai dari perencanaan, pengawasan mutu, sampai finishing. Anggaran jelas, jadwal terukur, dan progres selalu dilaporkan kepada Anda.</p><div class="chips"><span>Bangun rumah</span><span>Renovasi</span><span>Struktur</span><span>Finishing</span><span>Pengawasan</span></div><a class="btn" href="#lahan">Lihat proses kerja kami <b>↗</b></a></div></div></section>
+<section id="karya" class="wrap"><h2>Karya<br>pilihan<sup>(04)</sup></h2><div class="grid">
+<a class="card" href="#kontak"><small>Penghargaan desain 2026 · Finalis</small>Aplikasi kesehatan harian</a>
+<a class="card" href="#kontak">Aplikasi belajar membaca anak</a>
+<a class="card" href="#kontak">Pengalaman web scroll 3D</a>
+<a class="card" href="#kontak">Filter AR untuk produk</a></div></section>
+</main>
+<section id="kontak"><div><h2>Ayo berkarya<br>bersama.</h2><p style="color:#9a9db3;margin-top:26px">Punya ide atau pertanyaan? Ceritakan kepada saya.</p><a class="btn" href="mailto:halo@contoh.com">Mulai percakapan <b>↗</b></a></div>
+<div><div class="cols"><div><small>Kontak</small>halo@contoh.com ↗</div><div><small>Di tempat lain</small>Instagram ↗</div><div><small>Berbasis di</small>Jakarta, Indonesia</div></div><div class="cr"><span>© 2026 Studio Ruang</span><a href="#">Kembali ke atas ↑</a></div></div></section>
+<script src="js/core.js"></script>
+<script src="js/hero-dom.js"></script>
+<script src="js/hero-webgl.js"></script>
+<script src="js/hero-scroll.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/lahan.js"></script>
+</body></html>

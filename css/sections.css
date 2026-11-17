@@ -1,0 +1,198 @@
+/* Bagian Tentang, Karya, Kontak */
+.wrap {
+  padding: 0 clamp(18px, 5vw, 96px);
+}
+#tentang {
+  min-height: 100vh;
+  padding-top: 110px;
+  position: relative;
+}
+#tentang h2 {
+  font-weight: 500;
+  font-size: clamp(44px, 9vw, 138px);
+  letter-spacing: -0.05em;
+  line-height: 1.02;
+  margin: 0;
+  max-width: 12ch;
+}
+.two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 80px;
+  align-items: start;
+}
+.mark {
+  display: flex;
+  gap: 14px;
+}
+.mark i {
+  width: min(14vw, 120px);
+  aspect-ratio: 1;
+  border: 3px solid var(--fg);
+  border-radius: 50%;
+  position: relative;
+}
+.mark i::after {
+  content: '';
+  position: absolute;
+  width: 12%;
+  aspect-ratio: 1;
+  background: var(--fg);
+  border-radius: 50%;
+  left: 42%;
+  top: 8%;
+}
+.two h3 {
+  font-weight: 400;
+  font-size: clamp(20px, 2.4vw, 34px);
+  line-height: 1.5;
+  margin: 0 0 16px;
+}
+.two p {
+  color: var(--mute);
+  font-size: 15px;
+  max-width: 46ch;
+  line-height: 1.7;
+}
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 22px 0;
+}
+.chips span {
+  border: 1px solid var(--line);
+  border-radius: 99px;
+  padding: 6px 12px;
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.btn {
+  display: inline-flex;
+  gap: 40px;
+  background: var(--fg);
+  color: var(--bg);
+  border-radius: 99px;
+  padding: 18px 26px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+#karya {
+  padding: 140px 0 100px;
+}
+#karya h2 {
+  font-weight: 600;
+  font-size: clamp(56px, 12vw, 190px);
+  letter-spacing: -0.06em;
+  line-height: 0.9;
+  margin: 0 0 50px;
+}
+#karya h2 sup {
+  font-size: 0.14em;
+  font-weight: 400;
+  letter-spacing: 0;
+  vertical-align: top;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 28px;
+}
+.card {
+  position: relative;
+  aspect-ratio: 1.1;
+  border-radius: 28px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  padding: 26px;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+.card small {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  background: #fff;
+  color: #12131c;
+  border-radius: 99px;
+  font-size: 10px;
+  padding: 6px 12px;
+  font-weight: 500;
+}
+.card:nth-child(1) {
+  background: linear-gradient(150deg, #c9a58a, #6e5446);
+}
+.card:nth-child(2) {
+  background: linear-gradient(150deg, #a39a2a, #3e4a2b);
+}
+.card:nth-child(3) {
+  background: linear-gradient(150deg, #6d7bff, #1b1f6b);
+}
+.card:nth-child(4) {
+  background: linear-gradient(150deg, #ff9d6c, #8a2f3b);
+}
+#kontak {
+  background: #14151f;
+  color: #eff0f6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 130px clamp(18px, 5vw, 96px) calc(30px + env(safe-area-inset-bottom, 0px));
+  text-align: center;
+  position: relative;
+}
+#kontak h2 {
+  font-weight: 500;
+  font-size: clamp(52px, 11vw, 170px);
+  letter-spacing: -0.055em;
+  line-height: 0.95;
+  margin: 0;
+  background: linear-gradient(180deg, #fff 20%, #8b95ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+#kontak .btn {
+  background: #fff;
+  color: #14151f;
+  margin-top: 40px;
+}
+.cols {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+  text-align: left;
+  margin-top: 80px;
+  font-size: clamp(20px, 2.6vw, 36px);
+  letter-spacing: -0.03em;
+}
+.cols small {
+  display: block;
+  font-size: 10px;
+  color: #9a9db3;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.cols div {
+  border-top: 0;
+}
+.cr {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-top: 1px solid #eff0f633;
+  padding-top: 18px;
+  margin-top: 40px;
+  color: #9a9db3;
+}
