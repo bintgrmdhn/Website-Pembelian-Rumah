@@ -91,12 +91,6 @@
   line-height: 0.9;
   margin: 0 0 50px;
 }
-#karya h2 sup {
-  font-size: 0.14em;
-  font-weight: 400;
-  letter-spacing: 0;
-  vertical-align: top;
-}
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
