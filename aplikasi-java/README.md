@@ -41,4 +41,4 @@ Bunga 0 persen berarti pokok dibagi rata per bulan. Ini simulasi sederhana: tida
 
 ## Hak cipta
 
-Copyright (c) 2026 **Bintang Rhamadan** (NPM 202443501817) dan **Yusuf Wibisono** (NPM 202443501888). Hak cipta dilindungi.
+Copyright (c) 2026 **Bintang Ramadhan** (NPM 202443501817) dan **Yusuf Wibisono** (NPM 202443501888). Hak cipta dilindungi.

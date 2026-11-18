@@ -1,6 +1,6 @@
 /*
  * Aplikasi Pembelian Rumah
- * Copyright (c) 2026 Bintang Rhamadan (NPM 202443501817)
+ * Copyright (c) 2026 Bintang Ramadhan (NPM 202443501817)
  *                    dan Yusuf Wibisono (NPM 202443501888).
  * Hak cipta dilindungi.
  */
@@ -314,7 +314,7 @@ public class AplikasiRumah extends JFrame {
         tombol.add(btnBeli);
 
         JLabel hakCipta = new JLabel(
-                "\u00a9 2026 Bintang Rhamadan (202443501817) dan Yusuf Wibisono (202443501888). Hak cipta dilindungi.",
+                "\u00a9 2026 Bintang Ramadhan (202443501817) dan Yusuf Wibisono (202443501888). Hak cipta dilindungi.",
                 SwingConstants.CENTER);
         hakCipta.setForeground(Color.GRAY);
         hakCipta.setFont(hakCipta.getFont().deriveFont(11f));
