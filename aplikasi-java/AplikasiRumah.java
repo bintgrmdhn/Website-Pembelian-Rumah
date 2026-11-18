@@ -1,3 +1,9 @@
+/*
+ * Aplikasi Pembelian Rumah
+ * Copyright (c) 2026 Bintang Rhamadan (NPM 202443501817)
+ *                    dan Yusuf Wibisono (NPM 202443501888).
+ * Hak cipta dilindungi.
+ */
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Component;
@@ -115,7 +121,7 @@ public class AplikasiRumah extends JFrame {
         }
 
         setMinimumSize(new Dimension(1000, 560));
-        setSize(1200, 660);
+        setSize(1200, 710);
         setLocationRelativeTo(null);
         setVisible(true);
     }
@@ -307,9 +313,17 @@ public class AplikasiRumah extends JFrame {
         tombol.add(btnRiwayat);
         tombol.add(btnBeli);
 
+        JLabel hakCipta = new JLabel(
+                "\u00a9 2026 Bintang Rhamadan (202443501817) dan Yusuf Wibisono (202443501888). Hak cipta dilindungi.",
+                SwingConstants.CENTER);
+        hakCipta.setForeground(Color.GRAY);
+        hakCipta.setFont(hakCipta.getFont().deriveFont(11f));
+        hakCipta.setBorder(new EmptyBorder(10, 0, 0, 0));
+
         JPanel bawah = new JPanel(new BorderLayout());
         bawah.add(lblStatusBar, BorderLayout.WEST);
         bawah.add(tombol, BorderLayout.EAST);
+        bawah.add(hakCipta, BorderLayout.SOUTH);
         return bawah;
     }
 

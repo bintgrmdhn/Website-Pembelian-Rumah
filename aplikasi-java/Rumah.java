@@ -1,3 +1,9 @@
+/*
+ * Aplikasi Pembelian Rumah
+ * Copyright (c) 2026 Bintang Rhamadan (NPM 202443501817)
+ *                    dan Yusuf Wibisono (NPM 202443501888).
+ * Hak cipta dilindungi.
+ */
 /**
  * Model data untuk satu rumah yang dijual.
  * Objek Rumah menyimpan data saja (tidak ada tampilan di sini).
