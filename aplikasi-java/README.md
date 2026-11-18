@@ -4,7 +4,7 @@ Program desktop dengan jendela (Swing): daftar rumah, cari/filter, detail rumah,
 
 ## Cara menjalankan di BlueJ
 
-1. Buka BlueJ, pilih **Project > Open Non BlueJ...**, lalu pilih folder `java` ini.
+1. Buka BlueJ, pilih **Project > Open Non BlueJ...**, lalu pilih folder `aplikasi-java` ini.
    (Cara lain: **Project > New Project**, lalu salin semua file `.java` ke folder project itu.)
 2. Klik **Compile** di jendela BlueJ. Semua kelas harus tidak ada tanda silang.
 3. Klik kanan kelas **AplikasiRumah**, pilih `void main(String[] args)`, lalu **OK**.
